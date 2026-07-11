@@ -721,3 +721,393 @@ Forms
 ---
 
 # END OF PART 2
+# ==========================================================
+# PART 3
+# CORE FEATURES & BUSINESS LOGIC
+# ==========================================================
+
+## BUSINESS MODEL
+
+This application is an Enterprise B2B industrial platform.
+
+It is NOT an e-commerce marketplace.
+
+The primary objective is to help customers discover products, compare technical specifications, request quotations (RFQ), communicate with ATEN, and build long-term business relationships.
+
+Every feature must support this objective.
+
+---
+
+# PRIMARY USERS
+
+Customer
+
+Dealer
+
+Distributor
+
+Engineer
+
+Procurement Manager
+
+Factory Manager
+
+Sales Representative
+
+Administrator
+
+Super Administrator
+
+---
+
+# HOME PAGE
+
+The homepage must immediately communicate trust and professionalism.
+
+Include:
+
+- Premium hero section
+- Search bar
+- Featured categories
+- Featured products
+- Why ATEN
+- Industries served
+- Latest products
+- Download catalog
+- Certifications
+- Customer testimonials
+- Contact CTA
+- Footer
+
+---
+
+# PRODUCT CATALOG
+
+Every product must include:
+
+- Product Name
+- Product Code
+- Category
+- Images
+- Technical Specifications
+- Material
+- Dimensions
+- Pressure Rating
+- Temperature Range
+- Applications
+- Compatible Products
+- Accessories
+- PDF Datasheet
+- QR Code
+- RFQ Button
+- Share Button
+- Favorite Button
+- Compare Button
+
+---
+
+# PRODUCT FILTERS
+
+Support filtering by:
+
+Category
+
+Material
+
+Application
+
+Pressure
+
+Temperature
+
+Diameter
+
+Brand
+
+Availability
+
+Newest
+
+Popular
+
+Alphabetical
+
+---
+
+# PRODUCT SEARCH
+
+Support:
+
+Instant Search
+
+AI Suggestions
+
+Autocomplete
+
+Synonyms
+
+Fuzzy Search
+
+Search History
+
+Popular Searches
+
+Recent Searches
+
+---
+
+# PRODUCT COMPARISON
+
+Allow users to compare products side by side.
+
+Highlight differences.
+
+Export comparison as PDF.
+
+---
+
+# FAVORITES
+
+Users can save products.
+
+Sync across devices after login.
+
+---
+
+# REQUEST FOR QUOTATION (RFQ)
+
+Replace checkout completely.
+
+RFQ flow:
+
+Select Product
+
+Enter Quantity
+
+Company Name
+
+Contact Person
+
+Phone
+
+Email
+
+Country
+
+City
+
+Notes
+
+Attach File (optional)
+
+Submit
+
+Generate RFQ Number
+
+Confirmation Screen
+
+Admin Notification
+
+Email Notification
+
+---
+
+# CONTACT OPTIONS
+
+Every product page must provide:
+
+Phone
+
+Email
+
+WhatsApp
+
+Telegram
+
+Request Callback
+
+Contact Form
+
+Company Location
+
+---
+
+# DOCUMENTS
+
+Support downloading:
+
+PDF Catalog
+
+Datasheets
+
+Certificates
+
+Technical Documents
+
+---
+
+# CUSTOMER DASHBOARD
+
+Saved RFQs
+
+Favorite Products
+
+Recent Products
+
+Downloaded Documents
+
+Profile
+
+Company Information
+
+Notifications
+
+---
+
+# ADMIN PANEL
+
+Manage:
+
+Products
+
+Categories
+
+Users
+
+RFQs
+
+Documents
+
+Images
+
+Media
+
+Homepage Content
+
+Languages
+
+SEO
+
+Settings
+
+Analytics
+
+Audit Logs
+
+---
+
+# NOTIFICATIONS
+
+Email Notifications
+
+Admin Notifications
+
+RFQ Updates
+
+Product Updates
+
+System Alerts
+
+---
+
+# MULTI LANGUAGE
+
+English
+
+Persian
+
+Arabic
+
+Architecture must allow additional languages without code duplication.
+
+---
+
+# ANALYTICS
+
+Track:
+
+Most viewed products
+
+Most searched keywords
+
+Top RFQ products
+
+Downloads
+
+Popular categories
+
+User behavior
+
+Conversion to RFQ
+
+---
+
+# SEO
+
+Generate:
+
+Meta Title
+
+Meta Description
+
+Open Graph
+
+Twitter Cards
+
+Structured Data (Schema.org)
+
+Canonical URLs
+
+XML Sitemap
+
+Robots.txt
+
+Breadcrumb Schema
+
+Product Schema
+
+Organization Schema
+
+---
+
+# PERFORMANCE GOALS
+
+Lighthouse Performance >95
+
+Accessibility >95
+
+Best Practices >95
+
+SEO >95
+
+Core Web Vitals must pass.
+
+---
+
+# QUALITY REQUIREMENTS
+
+Every feature must be:
+
+Production Ready
+
+Reusable
+
+Well Documented
+
+Fully Responsive
+
+Accessible
+
+Secure
+
+Testable
+
+Maintainable
+
+Scalable
+
+Enterprise Grade
+
+---
+
+# END OF PART 3
