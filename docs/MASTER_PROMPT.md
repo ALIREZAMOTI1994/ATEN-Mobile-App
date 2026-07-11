@@ -2407,3 +2407,456 @@ Image Search
 Visual Product Recognition
 
 # END OF PART 5
+# ==========================================================
+# PART 6
+# UX • MOTION • INTERACTION • DESIGN TOKENS
+# ==========================================================
+
+## UX PHILOSOPHY
+
+Every interaction must feel effortless.
+
+Every screen must have one primary objective.
+
+Remove unnecessary complexity.
+
+Reduce cognitive load.
+
+Guide users naturally.
+
+Every action should require the minimum number of taps.
+
+---
+
+# FIRST IMPRESSION
+
+The first five seconds determine user trust.
+
+The landing experience must immediately communicate:
+
+Engineering Expertise
+
+Industrial Reliability
+
+Premium Quality
+
+International Standards
+
+Trust
+
+Professionalism
+
+---
+
+# NAVIGATION PRINCIPLES
+
+Navigation must never confuse users.
+
+Users should always know:
+
+Where they are
+
+Where they came from
+
+Where they can go next
+
+Navigation hierarchy:
+
+Home
+
+↓
+
+Category
+
+↓
+
+Subcategory
+
+↓
+
+Product
+
+↓
+
+RFQ
+
+Every screen should provide clear navigation.
+
+---
+
+# MOBILE NAVIGATION
+
+Persistent Bottom Navigation
+
+Search Shortcut
+
+Quick RFQ Button
+
+Back Gesture Support
+
+Swipe Navigation
+
+Floating Search
+
+Sticky Header
+
+Safe Area Support
+
+Large Touch Targets
+
+---
+
+# DESKTOP NAVIGATION
+
+Sticky Navigation
+
+Mega Menu
+
+Keyboard Navigation
+
+Breadcrumbs
+
+Quick Search
+
+Floating Action Panel
+
+---
+
+# PAGE TRANSITIONS
+
+Every transition must feel smooth.
+
+Maximum animation duration:
+
+300 milliseconds
+
+Never block user interaction.
+
+Support Reduced Motion.
+
+Avoid distracting animations.
+
+---
+
+# MICRO INTERACTIONS
+
+Buttons
+
+Hover
+
+Focus
+
+Press
+
+Loading
+
+Success
+
+Failure
+
+Validation
+
+Favorite
+
+Compare
+
+Bookmark
+
+Download
+
+Share
+
+Search
+
+Every interaction must provide visual feedback.
+
+---
+
+# SCROLL EXPERIENCE
+
+Smooth scrolling
+
+Scroll restoration
+
+Sticky filters
+
+Sticky search
+
+Sticky actions
+
+Scroll progress indicator
+
+Hide header while scrolling down
+
+Reveal header while scrolling up
+
+---
+
+# LOADING EXPERIENCE
+
+Instant skeleton loading
+
+Progressive image loading
+
+Lazy loading
+
+Blur placeholders
+
+Optimistic UI
+
+Background prefetching
+
+Preload critical assets
+
+---
+
+# PRODUCT GALLERY
+
+Support:
+
+Swipe
+
+Zoom
+
+Pinch
+
+Fullscreen
+
+High Resolution
+
+Thumbnail Navigation
+
+Gesture Navigation
+
+Image Preloading
+
+---
+
+# FORMS
+
+Every form must:
+
+Auto Save (when appropriate)
+
+Inline Validation
+
+Helpful Errors
+
+Auto Focus
+
+Keyboard Optimization
+
+Auto Complete
+
+Large Inputs
+
+Accessible Labels
+
+Required Indicators
+
+---
+
+# SEARCH UX
+
+Instant Results
+
+Search Suggestions
+
+Popular Searches
+
+Recent Searches
+
+Voice Search Ready
+
+AI Suggestions Ready
+
+Filter Chips
+
+Search Highlighting
+
+No Result Suggestions
+
+---
+
+# FILTER EXPERIENCE
+
+Bottom Sheet (Mobile)
+
+Sidebar (Desktop)
+
+Multi Select
+
+Reset Filters
+
+Apply Filters
+
+Filter Count
+
+Animated Expansion
+
+Sticky Apply Button
+
+---
+
+# RFQ EXPERIENCE
+
+One-handed usage
+
+Progress Indicator
+
+Draft Saving
+
+Image Attachment
+
+PDF Attachment
+
+Company Auto Fill
+
+Confirmation Screen
+
+Success Animation
+
+RFQ Tracking Number
+
+---
+
+# FEEDBACK
+
+Every user action should receive feedback.
+
+Loading
+
+Success
+
+Warning
+
+Error
+
+Information
+
+Undo (when applicable)
+
+---
+
+# DESIGN TOKENS
+
+Create centralized design tokens for:
+
+Colors
+
+Typography
+
+Spacing
+
+Radius
+
+Shadows
+
+Icons
+
+Motion
+
+Opacity
+
+Elevation
+
+Border
+
+Z Index
+
+Transitions
+
+Breakpoints
+
+Animations
+
+---
+
+# ACCESSIBILITY
+
+Keyboard Friendly
+
+Screen Reader Friendly
+
+Focus Visible
+
+Minimum Touch Size
+
+High Contrast
+
+Reduced Motion
+
+Scalable Fonts
+
+Semantic HTML
+
+WCAG 2.2 AA
+
+---
+
+# PERFORMANCE RULES
+
+Never animate expensive properties.
+
+Prefer:
+
+Transform
+
+Opacity
+
+Avoid:
+
+Top
+
+Left
+
+Width
+
+Height
+
+When animation is necessary.
+
+Use GPU acceleration whenever possible.
+
+---
+
+# OFFLINE EXPERIENCE
+
+Display offline banner.
+
+Queue RFQs locally.
+
+Sync automatically.
+
+Cache viewed products.
+
+Cache downloaded catalogs.
+
+Gracefully recover after reconnection.
+
+---
+
+# USER DELIGHT
+
+Small delightful details are encouraged.
+
+Examples:
+
+Smooth page transitions
+
+Subtle button feedback
+
+Elegant loading
+
+Natural scrolling
+
+High quality typography
+
+Meaningful empty states
+
+Premium spacing
+
+Never use flashy effects.
+Elegance over complexity.
+
+# END OF PART 6
