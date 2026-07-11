@@ -1496,3 +1496,491 @@ Production Ready
 ---
 
 # END OF PART 4A
+# ==========================================================
+# PART 4B
+# DATABASE • API • SECURITY • DEVOPS
+# ==========================================================
+
+## DATABASE PHILOSOPHY
+
+The database must be normalized.
+
+Avoid duplicated information.
+
+Use foreign keys.
+
+Use indexes.
+
+Use transactions.
+
+Use soft delete only when business requirements demand it.
+
+Every table must contain:
+
+id
+
+uuid
+
+created_at
+
+updated_at
+
+deleted_at (when necessary)
+
+created_by
+
+updated_by
+
+---
+
+# DATABASE MODULES
+
+Products
+
+Categories
+
+Sub Categories
+
+Industries
+
+Applications
+
+Materials
+
+Specifications
+
+Images
+
+Downloads
+
+Certificates
+
+Users
+
+Roles
+
+Permissions
+
+RFQs
+
+RFQ Items
+
+Companies
+
+Countries
+
+Cities
+
+Notifications
+
+Audit Logs
+
+Settings
+
+Translations
+
+SEO
+
+Media Library
+
+Favorites
+
+Compare Lists
+
+Search History
+
+Analytics
+
+System Logs
+
+---
+
+# API DESIGN
+
+REST API
+
+Versioning:
+
+/api/v1/
+
+Use JSON.
+
+Never expose unnecessary fields.
+
+Consistent response structure.
+
+Example:
+
+success
+
+message
+
+data
+
+errors
+
+pagination
+
+meta
+
+---
+
+# API STANDARDS
+
+HTTP Status Codes
+
+200 OK
+
+201 Created
+
+204 No Content
+
+400 Bad Request
+
+401 Unauthorized
+
+403 Forbidden
+
+404 Not Found
+
+409 Conflict
+
+422 Validation Error
+
+429 Too Many Requests
+
+500 Internal Server Error
+
+---
+
+# VALIDATION
+
+Every request must be validated.
+
+Never trust client input.
+
+Validate:
+
+Strings
+
+Numbers
+
+Files
+
+Emails
+
+Phones
+
+URLs
+
+Images
+
+PDF
+
+RFQ Data
+
+Search Parameters
+
+Filters
+
+Pagination
+
+---
+
+# AUTHENTICATION
+
+JWT
+
+Refresh Tokens
+
+Secure Cookies where appropriate
+
+Token Rotation
+
+Automatic Expiration
+
+Logout Everywhere
+
+Password Reset
+
+Email Verification
+
+Two Factor Authentication (Future Ready)
+
+---
+
+# AUTHORIZATION
+
+Role Based Access Control
+
+Roles
+
+Guest
+
+Customer
+
+Dealer
+
+Sales
+
+Manager
+
+Administrator
+
+Super Administrator
+
+Permissions must never be hardcoded.
+
+---
+
+# SECURITY
+
+Follow OWASP Top 10.
+
+Protect against:
+
+SQL Injection
+
+Cross Site Scripting
+
+Cross Site Request Forgery
+
+Broken Authentication
+
+Broken Access Control
+
+Security Misconfiguration
+
+Sensitive Data Exposure
+
+Path Traversal
+
+Command Injection
+
+File Upload Attacks
+
+Rate Limit Abuse
+
+Brute Force
+
+Enumeration
+
+Replay Attacks
+
+---
+
+# FILE UPLOADS
+
+Allow only approved extensions.
+
+Validate MIME Type.
+
+Validate Size.
+
+Generate random filenames.
+
+Virus scan ready architecture.
+
+Store outside public root whenever possible.
+
+---
+
+# PASSWORDS
+
+Hash using Argon2id.
+
+Never store plaintext passwords.
+
+Never log passwords.
+
+Never expose passwords.
+
+---
+
+# HEADERS
+
+Use security headers.
+
+Strict Transport Security
+
+Content Security Policy
+
+X-Frame-Options
+
+X-Content-Type-Options
+
+Referrer Policy
+
+Permissions Policy
+
+---
+
+# BACKUP
+
+Automatic Database Backup
+
+Daily
+
+Weekly
+
+Monthly
+
+Backup Verification
+
+Restore Testing
+
+Encrypted Backups
+
+---
+
+# CACHE
+
+Redis
+
+Product Cache
+
+Category Cache
+
+Homepage Cache
+
+Settings Cache
+
+Translation Cache
+
+Invalidate intelligently.
+
+---
+
+# QUEUES
+
+Email
+
+Notifications
+
+PDF Generation
+
+Image Processing
+
+Search Index
+
+Analytics
+
+Future AI Tasks
+
+---
+
+# SEARCH
+
+Use Meilisearch.
+
+Support:
+
+Full Text
+
+Synonyms
+
+Autocomplete
+
+Typo Tolerance
+
+Ranking
+
+Filtering
+
+Highlighting
+
+Future AI Ranking
+
+---
+
+# OBSERVABILITY
+
+Structured Logging
+
+Metrics
+
+Health Checks
+
+Error Tracking
+
+Performance Monitoring
+
+Slow Query Detection
+
+Queue Monitoring
+
+Storage Monitoring
+
+---
+
+# CI/CD
+
+GitHub Actions
+
+Automatic Testing
+
+Automatic Linting
+
+Automatic Build
+
+Automatic Deployment
+
+Rollback Support
+
+Environment Validation
+
+---
+
+# TESTING
+
+Unit Tests
+
+Feature Tests
+
+Integration Tests
+
+API Tests
+
+E2E Tests
+
+Accessibility Tests
+
+Performance Tests
+
+Security Tests
+
+Regression Tests
+
+Target Coverage: 90%+
+
+---
+
+# RELEASE POLICY
+
+Development
+
+Testing
+
+Staging
+
+Production
+
+Every deployment must be repeatable.
+
+Every deployment must be reversible.
+
+Every deployment must be documented.
+
+---
+
+# FINAL RULE
+
+Never generate code that cannot be deployed in production.
+
+Always choose maintainability over shortcuts.
+
+Always choose clarity over cleverness.
+
+Always think like a Senior Software Architect.
+
+# END OF PART 4B
