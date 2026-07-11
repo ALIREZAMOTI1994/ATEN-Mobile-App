@@ -1111,3 +1111,388 @@ Enterprise Grade
 ---
 
 # END OF PART 3
+# ==========================================================
+# PART 4A
+# ENTERPRISE SOFTWARE ARCHITECTURE
+# ==========================================================
+
+## ENTERPRISE DEVELOPMENT PRINCIPLES
+
+This project is expected to meet enterprise software engineering standards.
+
+Every implementation decision must prioritize:
+
+- Scalability
+- Security
+- Maintainability
+- Testability
+- Performance
+- Accessibility
+- Reliability
+- Clean Architecture
+- Developer Experience
+- Long-term Maintainability
+
+No feature should compromise these principles.
+
+---
+
+# PROJECT PHILOSOPHY
+
+The application must be designed to support long-term business growth.
+
+Every feature should be modular.
+
+Every module should be replaceable.
+
+Every component should be reusable.
+
+Business logic must never exist inside UI components.
+
+Avoid tight coupling.
+
+Avoid duplicated logic.
+
+Always design for future expansion.
+
+---
+
+# TECHNOLOGY STACK
+
+Frontend
+
+- Next.js (Latest Stable)
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- GSAP
+- React Hook Form
+- Zod
+- TanStack Query
+
+Backend
+
+- Laravel Latest LTS
+- PHP Latest Stable
+
+Database
+
+- MySQL
+
+Caching
+
+- Redis
+
+Storage
+
+- S3 Compatible Storage
+
+Search
+
+- Meilisearch
+
+Authentication
+
+- JWT
+- Refresh Token
+
+Containerization
+
+- Docker
+
+Deployment
+
+- Docker Compose
+
+Reverse Proxy
+
+- Nginx
+
+Version Control
+
+- Git
+
+CI/CD
+
+- GitHub Actions
+
+---
+
+# ARCHITECTURE STYLE
+
+Use Clean Architecture.
+
+Use Domain Driven Design principles where appropriate.
+
+Separate responsibilities into clear layers.
+
+Presentation Layer
+
+Application Layer
+
+Domain Layer
+
+Infrastructure Layer
+
+Business logic must remain independent of frameworks.
+
+---
+
+# FRONTEND STRUCTURE
+
+The frontend must follow feature-based architecture.
+
+Each feature should own:
+
+Pages
+
+Components
+
+Hooks
+
+Services
+
+Types
+
+Validation
+
+Tests
+
+Assets
+
+Avoid gigantic folders.
+
+Avoid God Components.
+
+Maximum component responsibility:
+
+One purpose.
+
+---
+
+# BACKEND STRUCTURE
+
+Organize backend using:
+
+Controllers
+
+Services
+
+Repositories
+
+Models
+
+Policies
+
+Requests
+
+Resources
+
+Events
+
+Listeners
+
+Jobs
+
+Notifications
+
+Observers
+
+Enums
+
+Traits
+
+DTOs
+
+Value Objects
+
+---
+
+# NAMING CONVENTIONS
+
+Use clear English names.
+
+Never abbreviate business entities.
+
+Good:
+
+IndustrialConnectionProduct
+
+Bad:
+
+ICP
+
+Use PascalCase for classes.
+
+camelCase for variables.
+
+UPPER_CASE for environment constants.
+
+kebab-case for URLs.
+
+snake_case only where required.
+
+---
+
+# CODING STANDARDS
+
+Follow SOLID.
+
+Follow DRY.
+
+Follow KISS.
+
+Follow YAGNI.
+
+Prefer composition over inheritance.
+
+Avoid magic numbers.
+
+Avoid duplicated validation.
+
+Every function should have one responsibility.
+
+Every class should have one responsibility.
+
+---
+
+# FILE ORGANIZATION
+
+Every directory must have a clear purpose.
+
+Never mix UI with business logic.
+
+Never mix API calls with presentation.
+
+Separate reusable components from page-specific components.
+
+---
+
+# ERROR HANDLING
+
+Every error must provide:
+
+Friendly message
+
+Developer log
+
+Unique error code
+
+Recovery suggestion
+
+Errors should never expose sensitive information.
+
+---
+
+# LOGGING
+
+Log:
+
+Authentication
+
+RFQ creation
+
+Admin actions
+
+File uploads
+
+Critical errors
+
+API failures
+
+Security events
+
+System events
+
+Logs must support auditing.
+
+---
+
+# CONFIGURATION
+
+Never hardcode secrets.
+
+Use environment variables.
+
+Support Development
+
+Staging
+
+Production
+
+Environments independently.
+
+---
+
+# PERFORMANCE
+
+Target Lighthouse:
+
+Performance >95
+
+Accessibility >95
+
+SEO >95
+
+Best Practices >95
+
+Core Web Vitals must pass.
+
+Largest Contentful Paint below 2.5 seconds.
+
+Interaction to Next Paint should feel instant.
+
+Minimize JavaScript bundle size.
+
+Optimize images automatically.
+
+Lazy load everything possible.
+
+---
+
+# DOCUMENTATION
+
+Every module must include:
+
+Purpose
+
+Responsibilities
+
+Dependencies
+
+Public API
+
+Examples
+
+Known limitations
+
+Future improvements
+
+Documentation is mandatory.
+
+---
+
+# QUALITY GATE
+
+No code is considered complete until:
+
+Reviewed
+
+Documented
+
+Tested
+
+Responsive
+
+Accessible
+
+Secure
+
+Optimized
+
+Production Ready
+
+---
+
+# END OF PART 4A
