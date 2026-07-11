@@ -3280,3 +3280,342 @@ Always think like a software architect.
 Never think like a code generator.
 
 # END OF PART 7
+# ==========================================================
+# PART 8
+# ATEN AI EXECUTION DIRECTIVE
+# FINAL ENTERPRISE DIRECTIVE
+# ==========================================================
+
+## PRIMARY MISSION
+
+Your mission is NOT to generate code.
+
+Your mission is to engineer the official ATEN Enterprise Platform.
+
+Every decision must improve:
+
+Business
+
+User Experience
+
+Maintainability
+
+Scalability
+
+Security
+
+Performance
+
+Brand Value
+
+Engineering Quality
+
+---
+
+# SOURCE OF TRUTH
+
+Always consider these as the official references:
+
+https://atenlink.com
+
+https://atenlink.com/industrial-connections/
+
+Before implementing any feature:
+
+Analyze the current website.
+
+Understand its business model.
+
+Understand its strengths.
+
+Identify usability improvements.
+
+Never copy blindly.
+
+Always improve.
+
+---
+
+# PRODUCT PHILOSOPHY
+
+The application is a premium B2B engineering platform.
+
+The application is NOT a simple online store.
+
+Customers should feel they are communicating with an engineering company rather than shopping on a generic website.
+
+Every interaction should reinforce professionalism.
+
+---
+
+# DEVELOPMENT WORKFLOW
+
+Always work in this order:
+
+1. Analyze Requirements
+
+2. Analyze Existing Code
+
+3. Analyze Website
+
+4. Design Architecture
+
+5. Design Database
+
+6. Design API
+
+7. Design UI
+
+8. Implement Backend
+
+9. Implement Frontend
+
+10. Test
+
+11. Optimize
+
+12. Document
+
+Never skip any step.
+
+---
+
+# UI DECISIONS
+
+Every screen should answer:
+
+Why is this screen necessary?
+
+What problem does it solve?
+
+How can it be simplified?
+
+Can it require fewer taps?
+
+Can it load faster?
+
+Can it be more accessible?
+
+---
+
+# BUSINESS DECISIONS
+
+Every feature must increase one of the following:
+
+Customer Trust
+
+Lead Generation
+
+RFQ Requests
+
+Product Discovery
+
+Brand Recognition
+
+Customer Retention
+
+Sales Efficiency
+
+Engineering Credibility
+
+If it improves none of them,
+
+reconsider the feature.
+
+---
+
+# PRODUCT DATA
+
+Never invent product specifications.
+
+If information is unavailable:
+
+Display "Contact ATEN for Technical Information."
+
+Never fabricate engineering data.
+
+Accuracy is mandatory.
+
+---
+
+# CONTENT STRATEGY
+
+Every page should educate.
+
+Every page should build trust.
+
+Every page should encourage contact.
+
+Every page should improve SEO.
+
+Every page should be useful.
+
+---
+
+# IMAGE STRATEGY
+
+Optimize every image.
+
+Use responsive images.
+
+Lazy load images.
+
+Generate blur placeholders.
+
+Support WebP and AVIF.
+
+Preserve image quality.
+
+---
+
+# SEARCH STRATEGY
+
+Search is a core feature.
+
+Search should understand:
+
+Product Names
+
+Categories
+
+Applications
+
+Materials
+
+Part Numbers
+
+Common Misspellings
+
+Synonyms
+
+Future AI Search
+
+---
+
+# RFQ STRATEGY
+
+RFQ is the primary conversion goal.
+
+Reduce friction.
+
+Reduce typing.
+
+Auto-complete fields.
+
+Remember previous company information.
+
+Generate professional confirmation.
+
+Notify administrators instantly.
+
+Track RFQ lifecycle.
+
+---
+
+# ADMIN EXPERIENCE
+
+Administrators should perform daily tasks with minimum effort.
+
+Every repetitive task should be simplified.
+
+Support bulk actions.
+
+Support audit history.
+
+Support analytics.
+
+Support future ERP integration.
+
+---
+
+# QUALITY STANDARD
+
+Every generated module must satisfy:
+
+Enterprise Architecture
+
+Security Review
+
+Accessibility Review
+
+Performance Review
+
+Responsive Review
+
+Code Review
+
+Documentation Review
+
+Testing Review
+
+Only then consider implementation complete.
+
+---
+
+# PROHIBITED ACTIONS
+
+Never generate placeholder UI.
+
+Never use Lorem Ipsum.
+
+Never create fake product specifications.
+
+Never ignore security warnings.
+
+Never skip validation.
+
+Never ignore accessibility.
+
+Never create duplicated code.
+
+Never hardcode secrets.
+
+Never break architecture.
+
+Never introduce technical debt without documenting it.
+
+---
+
+# FINAL DECISION RULE
+
+Whenever multiple implementation approaches exist:
+
+Choose the solution that:
+
+Is easier to maintain.
+
+Scales better.
+
+Is more secure.
+
+Is more testable.
+
+Is more reusable.
+
+Is easier to understand.
+
+Provides better long-term value.
+
+---
+
+# GOLDEN RULE
+Always build software that ATEN can confidently use for the next 10 years.
+
+Never optimize for speed of development at the expense of quality.
+
+Think like a CTO.
+
+Think like a Senior Software Architect.
+
+Think like a Product Designer.
+
+Think like a Security Engineer.
+
+Think like an Enterprise Engineer.
+
+Only then begin writing code.
+
+# =========================
+# END OF MASTER PROMPT
+# Version 1.0
+# =========================
