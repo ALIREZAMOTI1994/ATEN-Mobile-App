@@ -332,3 +332,242 @@ The architecture must support future modules:
 - Business Intelligence Dashboard
 
 # END OF PRD PART 2
+# ==========================================================
+# PRD PART 3
+# USER FLOWS & SCREEN SPECIFICATIONS
+# ==========================================================
+
+## PRIMARY USER FLOWS
+
+### Flow 1 — Product Discovery
+
+Launch App
+↓
+
+Splash Screen
+↓
+
+Home
+↓
+
+Search or Browse Categories
+↓
+
+Category
+↓
+
+Product List
+↓
+
+Product Details
+↓
+
+Download PDF / Compare / Favorite
+↓
+
+Request RFQ
+
+---
+
+### Flow 2 — RFQ Submission
+
+Product Details
+↓
+
+Request RFQ
+
+↓
+
+Enter Quantity
+
+↓
+
+Company Information
+
+↓
+
+Contact Details
+
+↓
+
+Attach Files (Optional)
+
+↓
+
+Review
+
+↓
+
+Submit
+
+↓
+
+Confirmation
+
+↓
+
+RFQ Tracking Number
+
+---
+
+### Flow 3 — Returning Customer
+
+Login
+
+↓
+
+Dashboard
+
+↓
+
+Recent RFQs
+
+↓
+
+Favorites
+
+↓
+
+Downloads
+
+↓
+
+Notifications
+
+↓
+
+New RFQ
+
+---
+
+# APPLICATION SCREENS
+
+The application should include:
+
+## Public
+
+- Splash
+- Onboarding
+- Home
+- Categories
+- Product List
+- Product Details
+- Search
+- Compare Products
+- Favorites
+- Download Center
+- About ATEN
+- Contact
+- Certifications
+- News & Articles
+- Privacy Policy
+- Terms & Conditions
+
+---
+
+## Customer
+
+- Login
+- Register
+- Forgot Password
+- Dashboard
+- Profile
+- Company Information
+- RFQs
+- Downloads
+- Notifications
+- Recently Viewed
+
+---
+
+## Administration
+
+- Dashboard
+- Product Manager
+- Category Manager
+- Brand Manager
+- RFQ Manager
+- Customer Manager
+- User Manager
+- Media Library
+- SEO Manager
+- Analytics
+- System Settings
+- Audit Logs
+
+---
+
+# NAVIGATION
+
+Bottom Navigation (Mobile)
+
+- Home
+- Categories
+- Search
+- RFQ
+- Profile
+
+Desktop Navigation
+
+- Mega Menu
+- Sticky Header
+- Breadcrumbs
+- Global Search
+
+---
+
+# GLOBAL SEARCH
+
+Search must support:
+
+- Product Name
+- Product Code
+- Brand
+- Material
+- Industry
+- Application
+- Pressure
+- Temperature
+- Keyword
+
+Results should appear instantly with autocomplete.
+
+---
+
+# EMPTY STATES
+
+Every screen must provide meaningful empty states.
+
+Example:
+
+No RFQs
+
+No Favorites
+
+No Downloads
+
+No Search Results
+
+Each state should include:
+
+- Illustration
+- Helpful Message
+- Suggested Action
+
+---
+
+# SUCCESS CRITERIA
+
+Users should be able to:
+
+✓ Find products in less than 30 seconds
+
+✓ Submit an RFQ in less than 60 seconds
+
+✓ Download product documents in one tap
+
+✓ Contact ATEN from any product page
+
+✓ Compare products easily
+
+# END OF PRD PART 3
