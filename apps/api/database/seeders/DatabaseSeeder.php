@@ -21,10 +21,9 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
         ]);
 
-        User::factory()->create([
-            'name' => 'ATEN Admin',
-            'email' => 'admin@atenlink.com',
-            'role' => 'admin',
-        ]);
+        User::firstOrCreate(
+            ['email' => 'admin@atenlink.com'],
+            User::factory()->raw(['email' => 'admin@atenlink.com', 'name' => 'ATEN Admin', 'role' => 'admin'])
+        );
     }
 }

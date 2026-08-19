@@ -10,8 +10,10 @@ instead of checkout, per the platform's non-negotiable business rules (see `CLAU
   with an offline-capable service worker.
 - **Backend** — `apps/api`: Laravel REST API (`/api/v1`), MySQL, Redis (cache/queue/session),
   Sanctum token authentication.
-- **Deployment** — Docker Compose (nginx + PHP-FPM for the API, MySQL, Redis, and the Next.js
-  standalone server).
+- **Deployment** — each app is a single self-contained Docker image (the API image bundles
+  nginx + PHP-FPM via supervisord); `docker-compose.yml` runs both plus MySQL and Redis for
+  local/self-hosted use. See [`DEPLOY.md`](./DEPLOY.md) for deploying to Liara with automatic
+  deploys on every push via GitHub Actions.
 
 ## Project structure
 
@@ -55,12 +57,20 @@ cp apps/api/.env.example apps/api/.env
 docker compose up --build -d
 docker compose exec api php artisan key:generate
 docker compose exec api php artisan storage:link
-docker compose exec api php artisan db:seed   # first run only — loads the product catalog
 ```
+
+Migrations and the product catalog seed run automatically every time the `api` container
+starts (the seeders are idempotent, so this never duplicates data).
 
 - Web: http://localhost:3000
 - API: http://localhost:8080/api/v1
 - MySQL: localhost:3306, Redis: internal only
+
+## Production deployment
+
+See [`DEPLOY.md`](./DEPLOY.md) for a step-by-step guide to deploying both apps to Liara with
+zero manual steps after the one-time setup — every push to `main` redeploys automatically via
+GitHub Actions.
 
 ## Data
 

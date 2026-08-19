@@ -4,13 +4,17 @@ COPY composer.json composer.lock ./
 RUN composer install --no-dev --no-interaction --no-scripts --no-progress --prefer-dist \
     && composer clear-cache
 
+# php-fpm + nginx in a single image, so the API deploys as one container on
+# any single-service host (Liara, Railway, Fly.io, ...) while docker-compose
+# keeps using the same image for local/self-hosted runs.
 FROM php:8.4-fpm-alpine
-WORKDIR /var/www/html
 
 RUN apk add --no-cache \
         icu-dev \
         libzip-dev \
         oniguruma-dev \
+        nginx \
+        supervisor \
     && docker-php-ext-install \
         pdo_mysql \
         intl \
@@ -18,17 +22,19 @@ RUN apk add --no-cache \
         opcache \
     && apk del icu-dev libzip-dev oniguruma-dev
 
+WORKDIR /var/www/html
+
 COPY --from=vendor /app/vendor ./vendor
 COPY . .
 
-RUN addgroup -g 1000 aten \
-    && adduser -G aten -u 1000 -D aten \
-    && chown -R aten:aten /var/www/html \
+RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 storage bootstrap/cache \
-    && chmod +x docker/entrypoint.sh
+    && chmod +x docker/entrypoint.sh \
+    && mkdir -p /run/nginx
 
-USER aten
+COPY docker/nginx.conf /etc/nginx/http.d/default.conf
+COPY docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 9000
+EXPOSE 8080
 ENTRYPOINT ["docker/entrypoint.sh"]
-CMD ["php-fpm"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
