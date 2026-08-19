@@ -1,0 +1,49 @@
+name: Deploy to Liara
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  deploy-api:
+    runs-on: ubuntu-latest
+    if: ${{ vars.LIARA_API_APP != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install -g @liara/cli
+      - name: Deploy API to Liara
+        run: |
+          liara deploy \
+            --app "${{ vars.LIARA_API_APP }}" \
+            --api-token "${{ secrets.LIARA_API_TOKEN }}" \
+            --path apps/api \
+            --platform docker \
+            --port 8080 \
+            --no-app-logs \
+            --detach
+
+  deploy-web:
+    runs-on: ubuntu-latest
+    needs: deploy-api
+    if: ${{ always() && vars.LIARA_WEB_APP != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install -g @liara/cli
+      - name: Deploy Web to Liara
+        run: |
+          liara deploy \
+            --app "${{ vars.LIARA_WEB_APP }}" \
+            --api-token "${{ secrets.LIARA_API_TOKEN }}" \
+            --path apps/web \
+            --platform docker \
+            --port 3000 \
+            --build-arg NEXT_PUBLIC_API_URL="${{ vars.LIARA_API_PUBLIC_URL }}" \
+            --no-app-logs \
+            --detach
